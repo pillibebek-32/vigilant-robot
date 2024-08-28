@@ -84,7 +84,7 @@
                                                 @php
                                                     $after_discount=($product_detail->price-(($product_detail->price*$product_detail->discount)/100));
                                                 @endphp
-												<p class="price"><span class="discount">${{number_format($after_discount,2)}}</span><s>${{number_format($product_detail->price,2)}}</s> </p>
+												<p class="price"><span class="discount">₺{{number_format($after_discount,2)}}</span><s>₺{{number_format($product_detail->price,2)}}</s> </p>
 												<p class="description">{!!($product_detail->summary)!!}</p>
 											</div>
 											<!--/ End Description -->
@@ -329,7 +329,7 @@
                                             <img class="hover-img" src="{{$photo[0]}}" alt="{{$photo[0]}}">
                                             <span class="price-dec">{{$data->discount}} % Off</span>
                                                                     {{-- <span class="out-of-stock">Hot</span> --}}
-                                        </a>
+                                          </a>
                                         <div class="button-head">
                                             <div class="product-action">
                                                 <a data-toggle="modal" data-target="#modelExample" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
@@ -347,8 +347,8 @@
                                             @php
                                                 $after_discount=($data->price-(($data->discount*$data->price)/100));
                                             @endphp
-                                            <span class="old">${{number_format($data->price,2)}}</span>
-                                            <span>${{number_format($after_discount,2)}}</span>
+{{--                                            <span class="old">₺{{number_format($data->price,2)}}</span>--}}
+                                            <span>₺{{number_format($after_discount,2)}}</span>
                                         </div>
 
                                     </div>

@@ -21706,8 +21706,8 @@ var hasOwnProperty = objectProto.hasOwnProperty;
 
 /** Used to detect if a method is native. */
 var reIsNative = RegExp('^' +
-  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\$&')
-  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '$'
+  funcToString.call(hasOwnProperty).replace(reRegExpChar, '\\₺&')
+  .replace(/hasOwnProperty|(function).*?(?=\\\()| for .+?(?=\\\])/g, '$1.*?') + '₺'
 );
 
 /**
@@ -49999,7 +49999,7 @@ function decycleObject(object) {
             case 'boolean':
                 return value;
         }
-    })(object, '$');
+    })(object, '₺');
 }
 function safeJSONStringify(source) {
     try {
@@ -56556,7 +56556,7 @@ function normalizeScopedSlots (
   } else {
     res = {};
     for (var key$1 in slots) {
-      if (slots[key$1] && key$1[0] !== '$') {
+      if (slots[key$1] && key$1[0] !== '₺') {
         res[key$1] = normalizeScopedSlot(normalSlots, key$1, slots[key$1]);
       }
     }
@@ -65504,7 +65504,7 @@ function checkNode (node, warn) {
 function checkEvent (exp, text, warn, range) {
   var stripped = exp.replace(stripStringRE, '');
   var keywordMatch = stripped.match(unaryOperatorsRE);
-  if (keywordMatch && stripped.charAt(keywordMatch.index - 1) !== '$') {
+  if (keywordMatch && stripped.charAt(keywordMatch.index - 1) !== '₺') {
     warn(
       "avoid using JavaScript unary operator as property name: " +
       "\"" + (keywordMatch[0]) + "\" in expression " + (text.trim()),

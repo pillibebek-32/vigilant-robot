@@ -50,7 +50,7 @@
 					<div class="col-lg-3 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer social">
-							<h4>Get In Tuch</h4>
+							<h4>İletişim</h4>
 							<!-- Single Widget -->
 							<div class="contact">
 								<ul>
@@ -74,7 +74,7 @@
 					<div class="row">
 						<div class="col-lg-6 col-12">
 							<div class="left">
-								<p>Copyright © {{date('Y')}} <a href="https://github.com/Prajwal100" target="_blank">Prajwal Rai</a>  -  All Rights Reserved.</p>
+								<p>ambalajingo.com © {{date('Y')}} <a href="https://github.com/Prajwal100" target="_blank">A & U ❤️ </a>  -  Tüm Hakları Saklıdır.</p>
 							</div>
 						</div>
 						<div class="col-lg-6 col-12">

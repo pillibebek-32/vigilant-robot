@@ -1,7 +1,7 @@
 @extends('frontend.layouts.master')
 @section('title','AmbalajINGO')
 @section('main-content')
-<!-- Slider Area -->
+<!-- Slider Area
 @if(count($banners)>0)
     <section id="Gslider" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -12,7 +12,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
                 @foreach($banners as $key=>$banner)
-                <div class="carousel-item {{(($key==0)? 'active' : '')}}">
+                 <div class="carousel-item {{(($key==0)? 'active' : '')}}">
                     <img class="first-slide" src="{{$banner->photo}}" alt="First slide">
                     <div class="carousel-caption d-none d-md-block text-left">
                         <h1 class="wow fadeInDown">{{$banner->title}}</h1>
@@ -31,7 +31,7 @@
         <span class="sr-only">Next</span>
         </a>
     </section>
-@endif
+   @endif
 
 <!--/ End Slider Area -->
 

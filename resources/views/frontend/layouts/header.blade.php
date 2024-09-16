@@ -102,8 +102,25 @@
                                     @endphp
                                 @endforeach
                            @endif
-                            <a href="{{route('user')}}" class="single-icon"><i class="ti-user"></i></a>
-{{--                            // <span class="total-count">{{Helper::wishlistCount()}}</span>//--}}
+                                    <!-- Add the 'shopping' class to your dropdown container -->
+                            <!-- Updated Dropdown Structure -->
+                            <!-- User Dropdown Structure, similar to the shopping cart dropdown -->
+                            <div class="sinlge-bar shopping">
+                                <a href="{{ route('user') }}" class="single-icon"><i class="ti-user"></i></a>
+                                <!-- User Dropdown Menu -->
+                                <div class="shopping-item">
+                                    <div class="dropdown-cart-header">
+                                        <span>User Menu</span>
+                                    </div>
+                                    <ul class="shopping-list">
+                                        <li><a href="">Panelim</a></li>
+                                        <li><a href="">Kargo Takibi</a></li>
+                                        <li><a href="">Çıkış Yap</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            {{--                            // <span class="total-count">{{Helper::wishlistCount()}}</span>//--}}
                             <!-- Shopping Item -->
 {{--                            @auth--}}
 {{--                                <div class="shopping-item">--}}

@@ -24,11 +24,11 @@
 						<div class="single-footer links">
 							<h4>Information</h4>
 							<ul>
-								<li><a href="{{route('about-us')}}">About Us</a></li>
-								<li><a href="#">Faq</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="{{route('contact')}}">Contact Us</a></li>
-								<li><a href="#">Help</a></li>
+								<li><a href="{{route('about-us')}}">Hakkımızda</a></li>
+								<li><a href="#">SSS</a></li>
+								<li><a href="#">Şartlar ve Sözleşmeler</a></li>
+								<li><a href="{{route('contact')}}">Bize Ulaşın</a></li>
+								<li><a href="#">Yardım</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -36,13 +36,11 @@
 					<div class="col-lg-2 col-md-6 col-12">
 						<!-- Single Widget -->
 						<div class="single-footer links">
-							<h4>Customer Service</h4>
+							<h4>Müşteri Hizmetleri</h4>
 							<ul>
-								<li><a href="#">Payment Methods</a></li>
-								<li><a href="#">Money-back</a></li>
-								<li><a href="#">Returns</a></li>
-								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Privacy Policy</a></li>
+								<li><a href="#">Ödeme Yöntemleri</a></li>
+								<li><a href="#">Kargo</a></li>
+								<li><a href="#">KVKK</a></li>
 							</ul>
 						</div>
 						<!-- End Single Widget -->
@@ -88,7 +86,7 @@
 		</div>
 	</footer>
 	<!-- /End Footer Area -->
- 
+
 	<!-- Jquery -->
     <script src="{{asset('frontend/js/jquery.min.js')}}"></script>
     <script src="{{asset('frontend/js/jquery-migrate-3.0.0.js')}}"></script>
@@ -125,7 +123,7 @@
 	<!-- Active JS -->
 	<script src="{{asset('frontend/js/active.js')}}"></script>
 
-	
+
 	@stack('scripts')
 	<script>
 		setTimeout(function(){

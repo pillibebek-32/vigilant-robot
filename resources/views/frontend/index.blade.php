@@ -303,49 +303,50 @@
 </section>
 <!-- End Shop Home List  -->
 
-<!-- Start Shop Blog  -->
-<section class="shop-blog section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title">
-                    <h2>From Our Blog</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            @if($posts)
-                @foreach($posts as $post)
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <!-- Start Single Blog  -->
-                        <div class="shop-single-blog">
-                            <img src="{{$post->photo}}" alt="{{$post->photo}}">
-                            <div class="content">
-                                <p class="date">{{$post->created_at->format('d M , Y. D')}}</p>
-                                <a href="{{route('blog.detail',$post->slug)}}" class="title">{{$post->title}}</a>
-                                <a href="{{route('blog.detail',$post->slug)}}" class="more-btn">Continue Reading</a>
-                            </div>
-                        </div>
-                        <!-- End Single Blog  -->
-                    </div>
-                @endforeach
-            @endif
+{{--<!-- Start Shop Blog  -->--}}
+{{--<section class="shop-blog section">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-12">--}}
+{{--                <div class="section-title">--}}
+{{--                    <h2>From Our Blog</h2>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <div class="row">--}}
+{{--            @if($posts)--}}
+{{--                @foreach($posts as $post)--}}
+{{--                    <div class="col-lg-4 col-md-6 col-12">--}}
+{{--                        <!-- Start Single Blog  -->--}}
+{{--                        <div class="shop-single-blog">--}}
+{{--                            <img src="{{$post->photo}}" alt="{{$post->photo}}">--}}
+{{--                            <div class="content">--}}
+{{--                                <p class="date">{{$post->created_at->format('d M , Y. D')}}</p>--}}
+{{--                                <a href="{{route('blog.detail',$post->slug)}}" class="title">{{$post->title}}</a>--}}
+{{--                                <a href="{{route('blog.detail',$post->slug)}}" class="more-btn">Continue Reading</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <!-- End Single Blog  -->--}}
+{{--                    </div>--}}
+{{--                @endforeach--}}
+{{--            @endif--}}
 
-        </div>
-    </div>
-</section>
-<!-- End Shop Blog  -->
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
+{{--<!-- End Shop Blog  -->--}}
 
 <!-- Start Shop Services Area -->
-<section class="shop-services section home">
+<!-- Start Shop Services Area -->
+<section class="shop-services section">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6 col-12">
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-rocket"></i>
-                    <h4>Free shiping</h4>
-                    <p>Orders over $100</p>
+                    <h4>Hızlı Kargo</h4>
+                    <p>Zamanında Teslim</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -353,8 +354,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-reload"></i>
-                    <h4>Free Return</h4>
-                    <p>Within 30 days returns</p>
+                    <h4>7/24 Müşteri Hizmetleri</h4>
+                    <p>Öncelik Sizsiniz</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -362,8 +363,8 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-lock"></i>
-                    <h4>Sucure Payment</h4>
-                    <p>100% secure payment</p>
+                    <h4>Güvenli Ödeme</h4>
+                    <p>Ödediğinizi Alma Garantisi</p>
                 </div>
                 <!-- End Single Service -->
             </div>
@@ -371,14 +372,15 @@
                 <!-- Start Single Service -->
                 <div class="single-service">
                     <i class="ti-tag"></i>
-                    <h4>Best Peice</h4>
-                    <p>Guaranteed price</p>
+                    <h4>En İyisi</h4>
+                    <p>En İyi Fiyata</p>
                 </div>
                 <!-- End Single Service -->
             </div>
         </div>
     </div>
 </section>
+<!-- End Shop Services Area -->
 <!-- End Shop Services Area -->
 
 @include('frontend.layouts.newsletter')
